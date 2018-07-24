@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "gb_agencies/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "cnccs"
+  spec.name          = "gb-agencies"
   spec.version       = GbAgencies::VERSION
   spec.authors       = ["Ribose Inc."]
   spec.email         = ["open.source@ribose.com"]
