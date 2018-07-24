@@ -312,7 +312,7 @@ module GbAgencies
       when "local"
         "#{LOCAL&.dig(@lang, prefix.to_sym) || 'XXXX'}#{@labels["local_issuer"]}" 
       when "enterprise", "social-group"
-        #get_metadata[:issuer]
+        @issuer || nil
       when "professional" then "PROFESSIONAL STANDARD" # TODO
       end
     end
@@ -338,9 +338,7 @@ module GbAgencies
       dn
     end
 
-    def gbtype_validate(root)
-      scope = root.at("//gbscope")&.text
-      prefix = root.at("//gbprefix")&.text
+    def gbtype_validate(scope, prefix)
       case scope
       when "national"
         NATIONAL.dig(@lang, prefix.to_sym) ||
