@@ -7,7 +7,7 @@ image:https://codeclimate.com/github/riboseinc/gb-agencies/badges/gpa.svg["Code 
 Gem to look up agency names for GB standards
 
 [source,ruby]
-====
+----
 # hash of localised labels
 LABELS = { "PRC" => "PRC", # People's Republic of China
            "industry_standard" => "Industry Standard",
@@ -61,4 +61,4 @@ gba.gbtype_validate("national", "GB")
 gba.gbtype_validate("national", "ZZ")
 ZZ is not a recognised national prefix
 => false
-====
+----
