@@ -324,7 +324,6 @@ module GbAgencies
     }.freeze
 
     def docidentifier(scope, prefix, mandate, docyear, docnum)
-      require "byebug"; byebug
       dn = case scope
            when nil
              docnum
