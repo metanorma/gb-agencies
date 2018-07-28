@@ -324,7 +324,10 @@ module GbAgencies
     }.freeze
 
     def docidentifier(scope, prefix, mandate, docyear, docnum)
+      require "byebug"; byebug
       dn = case scope
+           when nil
+             docnum
            when "local"
              "#{SCOPEPFX[scope.to_sym]}#{mandate_suffix(prefix, mandate)}/"\
                "#{docnum}".gsub(%r{/([TZ])/}, "/\\1 ")
