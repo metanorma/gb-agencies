@@ -324,6 +324,7 @@ module GbAgencies
     }.freeze
 
     def docidentifier(scope, prefix, mandate, docyear, docnum)
+      initslash = %r{^/}.match(docnum)
       dn = case scope
            when nil
              docnum
@@ -332,9 +333,9 @@ module GbAgencies
                "#{docnum}".gsub(%r{/([TZ])/}, "/\\1 ")
            when "social-group", "enterprise"
              "#{mandate_suffix(SCOPEPFX[scope.to_sym], mandate)}/"\
-               "#{prefix} #{docnum}"
+               "#{prefix}#{initslash ? "" : " "}#{docnum}"
            else
-             "#{mandate_suffix(prefix, mandate)}&#x2002;#{docnum}"
+             "#{mandate_suffix(prefix, mandate)}#{initslash ? "" : "&#x2002;"}#{docnum}"
            end
       dn += "&mdash;#{docyear}" if dn && docyear
       dn

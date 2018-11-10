@@ -75,6 +75,9 @@ RSpec.describe GbAgencies do
     expect(gba.docidentifier("sector", "PREFIX", "guide", "2002", "123")).to eq "PREFIX/Z&#x2002;123&mdash;2002"
     expect(gba.docidentifier("national", "PREFIX", "guide", "2002", "123")).to eq "PREFIX/Z&#x2002;123&mdash;2002"
     expect(gba.docidentifier("national", "PREFIX", "guide", nil, "123")).to eq "PREFIX/Z&#x2002;123"
+    expect(gba.docidentifier(nil, "PREFIX", "guide", nil, "123")).to eq "123"
+    expect(gba.docidentifier("national", "PREFIX", "guide", nil, "/123")).to eq "PREFIX/Z/123"
+    expect(gba.docidentifier("social-group", "PREFIX", "guide", nil, "/123")).to eq "T/Z/PREFIX/123"
   end
 
   it "validates prefixes" do
