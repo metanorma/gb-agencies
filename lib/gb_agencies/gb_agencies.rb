@@ -336,7 +336,7 @@ module GbAgencies
            else
              "#{mandate_suffix(prefix, mandate)}&#x2002;#{docnum}"
            end
-      dn += "&mdash;#{docyear}" if docyear
+      dn += "&mdash;#{docyear}" if dn && docyear
       dn
     end
 
