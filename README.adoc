@@ -1,7 +1,7 @@
 == gb-agencies
 
 image:https://img.shields.io/gem/v/gb-agencies.svg["Gem Version", link="https://rubygems.org/gems/gb-agencies"]
-image:https://img.shields.io/travis/riboseinc/gb-agencies/master.svg["Build Status", link="https://travis-ci.org/riboseinc/gb-agencies"]
+image:https://img.shields.io/travis/riboseinc/gb-agencies/master.svg["Build Status", link="https://travis-ci.com/riboseinc/gb-agencies"]
 image:https://codeclimate.com/github/riboseinc/gb-agencies/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/riboseinc/gb-agencies"]
 
 Gem to look up agency names for GB standards
