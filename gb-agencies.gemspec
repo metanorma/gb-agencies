@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Gem to look up agency names for GB standards.}
   spec.description   = %q{Gem to look up agency names for GB standards.}
-  spec.homepage      = "https://github.com/riboseinc/gb-agencies"
+  spec.homepage      = "https://github.com/metanorma/gb-agencies"
   spec.license       = "BSD-2-Clause"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
