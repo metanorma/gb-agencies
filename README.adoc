@@ -1,8 +1,11 @@
 == gb-agencies
 
 image:https://img.shields.io/gem/v/gb-agencies.svg["Gem Version", link="https://rubygems.org/gems/gb-agencies"]
-image:https://img.shields.io/travis/metanorma/gb-agencies/master.svg["Build Status", link="https://travis-ci.org/metanorma/gb-agencies"]
+image:https://travis-ci.com/metanorma/gb-agencies.svg["Build Status", link="https://travis-ci.com/metanorma/gb-agencies"]
+image:https://ci.appveyor.com/api/projects/status/4qbie4j3v5gc7o4k?svg=true["Appveyor Build Status", link="https://ci.appveyor.com/project/metanorma/gb-agencies"]
 image:https://codeclimate.com/github/metanorma/gb-agencies/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/metanorma/gb-agencies"]
+image:https://img.shields.io/github/issues-pr-raw/metanorma/gb-agencies.svg["Pull Requests", link="https://github.com/metanorma/gb-agencies/pulls"]
+image:https://img.shields.io/github/commits-since/metanorma/gb-agencies/latest.svg["Commits since latest",link="https://github.com/metanorma/gb-agencies/releases"]
 
 Gem to look up agency names for GB standards
 
