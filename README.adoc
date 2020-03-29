@@ -1,8 +1,9 @@
 == gb-agencies
 
 image:https://img.shields.io/gem/v/gb-agencies.svg["Gem Version", link="https://rubygems.org/gems/gb-agencies"]
-image:https://travis-ci.com/metanorma/gb-agencies.svg["Build Status", link="https://travis-ci.com/metanorma/gb-agencies"]
-image:https://ci.appveyor.com/api/projects/status/4qbie4j3v5gc7o4k?svg=true["Appveyor Build Status", link="https://ci.appveyor.com/project/metanorma/gb-agencies"]
+image:https://github.com/metanorma/gb-agencies/workflows/ubuntu/badge.svg["Ubuntu Build Status", link="https://github.com/metanorma/gb-agencies/actions?query=workflow%3Aubuntu"]
+image:https://github.com/metanorma/gb-agencies/workflows/macos/badge.svg["OSX Build Status", link="https://github.com/metanorma/gb-agencies/actions?query=workflow%3Amacos"]
+image:https://github.com/metanorma/gb-agencies/workflows/windows/badge.svg["Windows Build Status", link="https://github.com/metanorma/gb-agencies/actions?query=workflow%3Awindows"]
 image:https://codeclimate.com/github/metanorma/gb-agencies/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/metanorma/gb-agencies"]
 image:https://img.shields.io/github/issues-pr-raw/metanorma/gb-agencies.svg["Pull Requests", link="https://github.com/metanorma/gb-agencies/pulls"]
 image:https://img.shields.io/github/commits-since/metanorma/gb-agencies/latest.svg["Commits since latest",link="https://github.com/metanorma/gb-agencies/releases"]
