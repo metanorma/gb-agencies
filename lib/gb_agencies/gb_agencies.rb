@@ -1,12 +1,12 @@
 module GbAgencies
   class Agencies
-      def initialize(lang, labels = nil, issuer = nil)
-        @lang = lang
-        @labels = labels || { "PRC" => "", "industry_standard" => "",
-                              "local_standard" => "", "enterprise_standard" => "",
-                              "social_standard" => "" }
-        @issuer = issuer || "(not supplied)"
-      end
+    def initialize(lang, labels = nil, issuer = nil)
+      @lang = lang
+      @labels = labels || { "PRC" => "", "industry_standard" => "",
+                            "local_standard" => "", "enterprise_standard" => "",
+                            "social_standard" => "" }
+      @issuer = issuer || "(not supplied)"
+    end
 
     SECTOR = { "zh" => {
       AQ: { industry: "安全生产", admin: "国家安全生产管理局" },
